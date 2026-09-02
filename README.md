@@ -1,130 +1,133 @@
-# 🚀 90DaysOfDevOps
-### Learn • Build • Practice • Become Job-Ready
+# 🚀 90 Days of DevOps 2026
 
-Welcome to **90DaysOfDevOps**, a structured and hands-on DevOps challenge by **TrainWithShubham**.
+Welcome to my **90 Days of DevOps** journey! This repository documents my daily hands-on learning, projects, notes, and practical exercises as I build strong DevOps fundamentals from the ground up.
 
-This repository is designed to help you **build real DevOps skills step by step in 90 days** — not by watching endless videos, but by **doing daily tasks**, building projects, and thinking like a **production-ready DevOps engineer**.
+## 📌 About This Repository
 
-This is not a theory-heavy course.  
-This is a **discipline + execution challenge**.
+This repository serves as my public learning journal where I document everything I learn throughout the **90 Days of DevOps** challenge.
 
----
+Every day, I add new notes, scripts, Docker projects, networking exercises, Linux practice, Git workflows, CI/CD implementations, and real-world DevOps concepts.
 
-## 🎯 What is #90DaysOfDevOps?
+The objective is simple:
 
-**#90DaysOfDevOps** is a **day-wise DevOps learning challenge** where:
-
-- Every day has **one clear task**
-- Every task has a **real-world DevOps outcome**
-- Every learner builds a **public GitHub proof of work**
-- Every concept is reinforced through **hands-on practice**
-- Learning is aligned with **live classes and recordings**
-
-By the end of 90 days, you will have:
-- Strong DevOps fundamentals
-- Multiple mini-projects
-- One end-to-end DevOps capstone project
-- A GitHub profile that clearly shows consistency
-- Confidence to handle DevOps interviews and production systems
+* Learn by building
+* Practice consistently
+* Document everything
+* Share knowledge publicly
 
 ---
 
-## 🧠 Who Is This For?
+## 📚 Learning Topics
 
-This challenge is ideal for:
+Throughout this journey, I'll be exploring:
 
-- Students and freshers entering DevOps or Cloud
-- Working professionals switching to DevOps / SRE / Cloud roles
-- Developers who want to understand infrastructure and CI/CD
-- Anyone who believes **consistency beats talent**
-
-No prior DevOps experience is required.  
-**Commitment is mandatory.**
+* 🐧 Linux Administration
+* 🌐 Networking Fundamentals
+* ☁️ Cloud Computing
+* 🐳 Docker & Docker Compose
+* ⚙️ Shell Scripting
+* 🔧 Git & GitHub
+* 🚀 GitHub CLI
+* 📦 Docker Hub
+* ⚡ CI/CD Pipelines using GitHub Actions
+* ☸️ Kubernetes
+* 📊 Monitoring & Logging
+* ☁️ AWS Cloud Services
+* 🏗️ Terraform
+* ⚙️ Ansible
+* 🔐 DevOps Best Practices
+* 🚀 Real-World Projects
 
 ---
 
-## 🗂 Repository Structure
+## 📂 Repository Structure
 
-```
-90DaysOfDevOps/
-│
-├── README.md
-├── CONTRIBUTING.md
-├── LICENSE
-├── .gitignore
-│
-├── scripts/
-│   └── helper-scripts.sh
-│
+```text
+2026/
 ├── day-01/
-│   └── README.md
 ├── day-02/
-│   └── README.md
+├── day-03/
+│
 ├── ...
+│
 ├── day-90/
-│   └── README.md
+└── README.md
 ```
 
----
+Each day's folder may include:
 
-## 📅 How the Challenge Works
-
-- **One day = one task**
-- Tasks are aligned with **live classes**
-- Live class days focus on **core concepts**
-- Weekdays focus on **practice and reinforcement**
-- Daily commits are encouraged
-
-Even **30–60 minutes per day** is enough if done honestly.
-
----
-
-## 🛠 What You Will Learn
-
-- Linux fundamentals and troubleshooting
-- Shell scripting and automation
-- Networking basics for DevOps
-- Git and GitHub workflows
-- Docker and containerization
-- AWS core and advanced services
-- CI/CD using Jenkins, GitHub Actions, GitLab
-- DevSecOps fundamentals
-- Kubernetes, Helm, ArgoCD
-- Terraform and Ansible
-- Observability with Grafana, Prometheus, OpenTelemetry
-- End-to-end DevOps project
+* 📄 Learning Notes
+* 💻 Practice Commands
+* 🐳 Dockerfiles
+* 📦 Docker Compose Files
+* ⚙️ Shell Scripts
+* 📷 Screenshots
+* 📝 Markdown Documentation
+* 🚀 Mini Projects
 
 ---
 
-## 📦 How to Participate
+## 🛠️ Tech Stack
 
-1. Fork this repository
-2. Clone your fork
-3. Navigate to the current `day-XX` folder
-4. Complete the task
-5. Commit and push your work
+* Linux
+* Bash
+* Git
+* GitHub
+* GitHub CLI
+* GitHub Actions
+* Docker
+* Docker Compose
+* Docker Hub
+* Nginx
+* PostgreSQL
+* MySQL
+* Redis
+* Python
+* Java
+* AWS
+* Kubernetes
+* Terraform
+* Ansible
 
 ---
 
-## 🌍 Learn in Public
+## 🎯 Goals
 
-Share your progress on LinkedIn:
-
-```
-#90DaysOfDevOps
-#DevOpsKaJosh
-#TrainWithShubham
-```
+* Build strong DevOps fundamentals
+* Gain hands-on experience
+* Learn production-ready tools
+* Improve automation skills
+* Stay consistent for 90 days
+* Build a strong GitHub portfolio
 
 ---
 
-## ❤️ Final Note
+## 📖 Learning Resources
 
-DevOps is not about tools.  
-It is about **ownership, reliability, and consistency**.
+* TrainWithShubham – 90 Days of DevOps
+* Docker Documentation
+* Kubernetes Documentation
+* Linux Documentation
+* Git Documentation
+* AWS Documentation
 
-One day at a time.  
-One commit at a time.
+---
 
-Happy Learning  
-**TrainWithShubham**
+## 🤝 Connect With Me
+
+* 💼 **LinkedIn:** https://www.linkedin.com/in/robin-banerjee
+* 💼 **Twitter/X:** https://x.com/Robin_Banerjee_
+* 💻 **GitHub:** https://github.com/robin-banerjee
+* 💻 **Mail:** robinofficialcontact@gmail.com
+
+---
+
+## ⭐ Support
+
+If you find this repository helpful, please consider giving it a **⭐ Star**.
+
+It motivates me to continue learning, building, and sharing my DevOps/Cloud journey with the community.
+
+---
+
+> **"Consistency over perfection. One commit at a time, one step closer to becoming a DevOps Engineer."** 🚀

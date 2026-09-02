@@ -1,6 +1,6 @@
 ## Table of Contents
 
-Below is the index of the incredible DevOps journey that awaits you:
+Below is the index of the incredible DevOps/Cloud journey that awaits:
 
 ...
 
