@@ -51,7 +51,8 @@ Throughout this journey, I'll be exploring:
 ├── ...
 │
 ├── day-90/
-└── README.md
+├── README.md
+└──...
 ```
 
 Each day's folder may include:
