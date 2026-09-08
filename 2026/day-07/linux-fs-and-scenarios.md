@@ -56,6 +56,21 @@
     - I would use this directory to to see what external or commercial applications are installed (like Jenkins or Custom applications).
 
 ---    
+
+**Hands-on task**
+
+* Finding the largest log file in /var/log
+`du -sh /var/log/* 2>/dev/null | sort -h | tail -5`
+
+* Looking into a config file in /etc
+`cat /etc/hostname`
+
+* Checking the home directory
+`ls -la ~`
+
+![alt text](2026-09-08_05-44-49.png)
+
+---
            
 ## Part 2: Scenario-Based Practice
 
