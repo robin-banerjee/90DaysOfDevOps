@@ -138,7 +138,7 @@ ERR_CONNECTION_REFUSED
 ```
 
 
- Solution: I reloaded the Nginx service with **http**//< Public-IPv4-address-of-EC2-instance>. After reloading, my customized.html page was accessible.
+ Solution: I reloaded the Nginx service with **http**://< Public-IPv4-address-of-EC2-instance>. After reloading, my customized.html page was accessible.
 
 * File permissions issue when accessing logs.
 
