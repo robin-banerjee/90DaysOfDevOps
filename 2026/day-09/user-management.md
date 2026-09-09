@@ -2,13 +2,13 @@
 
 # Users & Groups Created
 
-## Users
+## Users Created
 - tokyo
 - berlin
 - professor
 - nairobi
 
-## Groups
+## Groups Created
 - developers
 - admins
 - project-team
