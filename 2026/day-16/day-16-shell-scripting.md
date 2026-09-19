@@ -322,8 +322,8 @@ Do you want to check the status of nginx? (y/n): y
        Docs: man:nginx(8)
        ...
 
-Sep 19 06:35:55 Machine systemd[1]: Starting nginx.service - A high performance web server and a reverse proxy server...
-Sep 19 06:35:55 Machine systemd[1]: Started nginx.service - A high performance web server and a reverse proxy server.
+Sep 19 06:35:55 pi systemd[1]: Starting nginx.service - A high performance web server and a reverse proxy server...
+Sep 19 06:35:55 pi systemd[1]: Started nginx.service - A high performance web server and a reverse proxy server.
 rasberry@pi:~/90DaysOfDevOps/2026/day-16/scripts$ ./server_check.sh
 Do you want to check the status of nginx? (y/n): n
 Skipped.
