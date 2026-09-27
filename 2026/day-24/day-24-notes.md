@@ -791,7 +791,8 @@ dea057b Updated README.md
 b02408c README for git
 e1abf06 Git cheatsheet
 ```
-    
+![alt text](images/cherry-pick.png)
+
 5. Answer in your notes:
    - What does cherry-pick do?
         * It lets you pick and apply one/range commit from another branch to your current branch instead of merging all.
