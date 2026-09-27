@@ -134,7 +134,7 @@ remote:
 To github.com:robin-banerjee/devops-notes.git
  * [new branch]      feature-1 -> feature-1
 ```
-![alt text](git-branch-changes.png)
+![alt text](images/git-branch-changes.png)
 
 Listed all branches:
 
@@ -192,9 +192,9 @@ git branch -d feature-2
     - If not forked then no need of upstream.
   * Origin is the remote repository that you own and push changes to, while upstream is the original repository from which your repository was forked or cloned and from which you receive updates.  
 
-![alt text](main-branch-on-github.png)    
+![alt text](images/main-branch-on-github.png)    
 
-![alt text](feature-1-branch-on-github.png) 
+![alt text](images/feature-1-branch-on-github.png) 
 
 Added GitHub remote:
 
@@ -227,7 +227,7 @@ Verified branches on GitHub.
 ## Task 4: Pull from GitHub
 1. Make a change to a file **directly on GitHub** (use the GitHub editor)
 
-![alt text](change-on-github-editor.png)
+![alt text](images/change-on-github-editor.png)
 
 2. Pull that change to your local repo
 
@@ -249,17 +249,17 @@ index 0000000..ccdfad5
 @@ -0,0 +1,126 @@
 +# 🚀 Git & GitHub Mastery Repository
 +
-+![Git](https://img.shields.io/badge/Git-Version%20Control-F05032?logo=git&logoColor=white)
-+![GitHub](https://img.shields.io/badge/GitHub-Repo-181717?logo=github)
-+![CLI](https://img.shields.io/badge/GitHub%20CLI-Command%20Line-3EAAAF?logo=github)
-+![Status](https://img.shields.io/badge/Status-Learning%20Project-blue)
-+![License](https://img.shields.io/badge/License-MIT-green)
++![Git](images/https://img.shields.io/badge/Git-Version%20Control-F05032?logo=git&logoColor=white)
++![GitHub](images/https://img.shields.io/badge/GitHub-Repo-181717?logo=github)
++![CLI](images/https://img.shields.io/badge/GitHub%20CLI-Command%20Line-3EAAAF?logo=github)
++![Status](images/https://img.shields.io/badge/Status-Learning%20Project-blue)
++![License](images/https://img.shields.io/badge/License-MIT-green)
 +
 +---
 ```
-![alt text](git-fetch.png) 
+![alt text](images/git-fetch.png) 
 
-![alt text](git-pull.png)
+![alt text](images/git-pull.png)
 
 ```bash
 user@Machine:~/Downloads/devops-notes/Git$ git fetch --all
@@ -288,10 +288,10 @@ index 0000000..e3d15a6
 @@ -0,0 +1,125 @@
 +# 🚀 Git & GitHub Mastery Repository
 +
-+![Git](https://img.shields.io/badge/Git-Version%20Control-F05032?logo=git&logoColor=white)
-+![GitHub](https://img.shields.io/badge/GitHub-Repo-181717?logo=github)
-+![CLI](https://img.shields.io/badge/GitHub%20CLI-Command%20Line-3EAAAF?logo=github)
-+![Status](https://img.shields.io/badge/Status-Learning%20Project-blue)
++![Git](images/https://img.shields.io/badge/Git-Version%20Control-F05032?logo=git&logoColor=white)
++![GitHub](images/https://img.shields.io/badge/GitHub-Repo-181717?logo=github)
++![CLI](images/https://img.shields.io/badge/GitHub%20CLI-Command%20Line-3EAAAF?logo=github)
++![Status](images/https://img.shields.io/badge/Status-Learning%20Project-blue)
 +
 +---
 +
@@ -326,7 +326,7 @@ git clone <repository-url>
 - After forking, how do you keep your fork in sync with the original repo?
     * There is a option avilable on GitHub, SyncFork. You can update a fork using that option.
 
-![alt text](sync-fork.png)
+![alt text](images/sync-fork.png)
 
 ---
 
