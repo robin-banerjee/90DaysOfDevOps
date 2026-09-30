@@ -5,207 +5,190 @@
 ### Make 3 commits in your practice repo (commit A, B, C)
 
 ```bash
-user@Machine:~/Downloads/devops-notes/Git$ git log --oneline 
-daca16c (HEAD -> main) Added D Commit
-cb0c4d3 Added C commit
-965bf1b Added A commit
-ca607fd (origin/main, origin/HEAD) Update git-commands.md for Day 24
-0413e9d Updated the create page to fix an urgent bug
-7c852ba (origin/feature-settings, feature-settings) Add theme preference support
-e612858 Add settings validation
-54fd03d Add settings save functionality
-18241a6 Add settings page UI
-63caa00 Added profile  feature
-f6c27a0 Add basic logging utility
-a1d8f3f Add application configuration file
-74de71f Resolve merge conflict
-44fa941 Update greeting in main branch
-0b5cb9f (origin/feature-conflict, feature-conflict) Update greeting in feature branch
-6958dae Add greet function
-0c9143e Merge branch 'feature-signup'
-2492ba9 Add application entry point
-6e7aa5d Add utility function for user greeting
-d2f8c09 Add signup form validation
-2cf5e4f Add signup page UI
-2ca4e61 Merge branch 'feature-login'
-a3a4106 (origin/feature-login, feature-login) Add login form validation
-ce3ee08 Add login page UI
-62f84ef (origin/feature-1, feature-1) Fix typo in comment for clarity
-afc18ed Updated git-commands.md with Day 23 commands and descriptions
-67cfdcb Updated git-commands.md with Day 23 commands
-581e274 Added test.py for Testing purpose
-4b2bab6 Added more Git commands to git-commands.md and updated the cheat sheet.
-1ef76a7 - Updated  with additional Git commands and details.
-0f0a98c - Updated  with additional Git commands.
+user@Machine:~/Downloads/devops-notes/Git$ git log --oneline | head
+557cf28 updated git-commands
+
+user@Machine:~/Downloads/devops-notes/Git$ git add .
+user@Machine:~/Downloads/devops-notes/Git$ git commit -m "test commit A"
+[main 4a2b0e9] test commit A
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Git/test-folder/sample.txt
+user@Machine:~/Downloads/devops-notes/Git$ git log --oneline | head
+4a2b0e9 test commit A
+557cf28 updated git-commands
+
+user@Machine:~/Downloads/devops-notes/Git$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   test-folder/sample.txt
+no changes added to commit (use "git add" and/or "git commit -a")
+
+user@Machine:~/Downloads/devops-notes/Git$ git add .
+user@Machine:~/Downloads/devops-notes/Git$ git commit -m "test commit B"
+[main 6521c5d] test commit B
+ 1 file changed, 1 insertion(+)
+user@Machine:~/Downloads/devops-notes/Git$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+
+user@Machine:~/Downloads/devops-notes/Git$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   test-folder/sample.txt
+no changes added to commit (use "git add" and/or "git commit -a")
+
+user@Machine:~/Downloads/devops-notes/Git$ git add .
+user@Machine:~/Downloads/devops-notes/Git$ git commit -m "test commit C"
+[main 10000ac] test commit C
+ 1 file changed, 1 insertion(+)
+user@Machine:~/Downloads/devops-notes/Git$ git log --oneline | head
+10000ac test commit C
+6521c5d test commit B
+4a2b0e9 test commit A
+557cf28 updated git-commands
 ```
+![alt text](images/before-reset.png)
+
+---
+
 ### Use git reset --soft to go back one commit — what happens to the changes?
 
 ```bach
 user@Machine:~/Downloads/devops-notes/Git$ git reset --soft HEAD~1
-user@Machine:~/Downloads/devops-notes/Git$ git log --oneline 
-cb0c4d3 (HEAD -> main) Added C commit
-965bf1b Added A commit
-ca607fd (origin/main, origin/HEAD) Update git-commands.md for Day 24
-0413e9d Updated the create page to fix an urgent bug
-7c852ba (origin/feature-settings, feature-settings) Add theme preference support
-e612858 Add settings validation
-54fd03d Add settings save functionality
-18241a6 Add settings page UI
-63caa00 Added profile  feature
-f6c27a0 Add basic logging utility
-a1d8f3f Add application configuration file
-74de71f Resolve merge conflict
-44fa941 Update greeting in main branch
-0b5cb9f (origin/feature-conflict, feature-conflict) Update greeting in feature branch
-6958dae Add greet function
-0c9143e Merge branch 'feature-signup'
-2492ba9 Add application entry point
-6e7aa5d Add utility function for user greeting
-d2f8c09 Add signup form validation
-2cf5e4f Add signup page UI
-2ca4e61 Merge branch 'feature-login'
-a3a4106 (origin/feature-login, feature-login) Add login form validation
-ce3ee08 Add login page UI
-62f84ef (origin/feature-1, feature-1) Fix typo in comment for clarity
-afc18ed Updated git-commands.md with Day 23 commands and descriptions
-67cfdcb Updated git-commands.md with Day 23 commands
-581e274 Added test.py for Testing purpose
-4b2bab6 Added more Git commands to git-commands.md and updated the cheat sheet.
-1ef76a7 - Updated  with additional Git commands and details.
-0f0a98c - Updated  with additional Git commands.
-aa82211 Added git-commands.md
-```
-### Re-commit, then use git reset --mixed to go back one commit — what happens now?
-```bash
+
+user@Machine:~/Downloads/devops-notes/Git$ git log --oneline | head
+6521c5d test commit B
+4a2b0e9 test commit A
+557cf28 updated git-commands
+
 user@Machine:~/Downloads/devops-notes/Git$ git status
 On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
 Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
-	modified:   login.js
+	modified:   test-folder/sample.txt
+```
+![alt text](after-soft-reset.png)
 
-user@Machine:~/Downloads/devops-notes/Git$ git commit -m "Added Commit E"
-[main 28e97b1] Added Commit E
- 1 file changed, 1 insertion(+), 1 deletion(-)
-user@Machine:~/Downloads/devops-notes/Git$ git log --oneline 
-28e97b1 (HEAD -> main) Added Commit E
-cb0c4d3 Added C commit
-965bf1b Added A commit
-ca607fd (origin/main, origin/HEAD) Update git-commands.md for Day 24
-0413e9d Updated the create page to fix an urgent bug
-7c852ba (origin/feature-settings, feature-settings) Add theme preference support
-e612858 Add settings validation
-54fd03d Add settings save functionality
-18241a6 Add settings page UI
-63caa00 Added profile  feature
-f6c27a0 Add basic logging utility
-a1d8f3f Add application configuration file
-74de71f Resolve merge conflict
-44fa941 Update greeting in main branch
-0b5cb9f (origin/feature-conflict, feature-conflict) Update greeting in feature branch
-6958dae Add greet function
-0c9143e Merge branch 'feature-signup'
-2492ba9 Add application entry point
-6e7aa5d Add utility function for user greeting
-d2f8c09 Add signup form validation
-2cf5e4f Add signup page UI
-2ca4e61 Merge branch 'feature-login'
-a3a4106 (origin/feature-login, feature-login) Add login form validation
-ce3ee08 Add login page UI
-62f84ef (origin/feature-1, feature-1) Fix typo in comment for clarity
-afc18ed Updated git-commands.md with Day 23 commands and descriptions
-67cfdcb Updated git-commands.md with Day 23 commands
-581e274 Added test.py for Testing purpose
-4b2bab6 Added more Git commands to git-commands.md and updated the cheat sheet.
-1ef76a7 - Updated  with additional Git commands and details.
-0f0a98c - Updated  with additional Git commands.
-aa82211 Added git-commands.md
-user@Machine:~/Downloads/devops-notes/Git$ git reset --mixed HEAD~1
-Unstaged changes after reset:
-M	login.js
+- Observation:
+
+  * Commit is removed from history.
+  * Changes remain **staged**.
+  * Files are ready to commit again.
+
+---
+
+### Re-commit, then use git reset --mixed to go back one commit — what happens now?
+
+```bash
+user@Machine:~/Downloads/devops-notes/Git$ git add .
+user@Machine:~/Downloads/devops-notes/Git$ git commit -m "test commit C"
+[main 32d395d] test commit C
+ 1 file changed, 1 insertion(+)
+
 user@Machine:~/Downloads/devops-notes/Git$ git status
 On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+
+user@Machine:~/Downloads/devops-notes/Git$ git log --oneline | head
+32d395d test commit C
+6521c5d test commit B
+4a2b0e9 test commit A
+557cf28 updated git-commands
+
+user@Machine:~/Downloads/devops-notes/Git$ git reset --mixed HEAD~1
+Unstaged changes after reset:
+M	Git/test-folder/sample.txt
+
+user@Machine:~/Downloads/devops-notes/Git$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git restore <file>..." to discard changes in working directory)
-	modified:   login.js
-
+	modified:   test-folder/sample.txt
 no changes added to commit (use "git add" and/or "git commit -a")
+
+user@Machine:~/Downloads/devops-notes/Git$ git log --oneline | head
+6521c5d test commit B
+4a2b0e9 test commit A
+557cf28 updated git-commands
 ```
+![alt text](after-mixed-reset.png)
+
+Observation:
+
+* Commit is removed.
+* Changes remain in working directory.
+* Changes become **unstaged**.
+
+---
+Before hard reset:
+
+![alt text](before-hard-reset.png)
 
 Re-commit, then use git reset --hard to go back one commit — what happens this time?
 
 ```bash
-user@Machine:~/Downloads/devops-notes/Git$ git status 
-On branch main
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-	modified:   login.js
-no changes added to commit (use "git add" and/or "git commit -a")
-
-user@Machine:~/Downloads/devops-notes/Git$ git add .
-user@Machine:~/Downloads/devops-notes/Git$ git commit -m "Added F commit"
-[main f957a3e] Added F commit
- 1 file changed, 1 insertion(+), 1 deletion(-)
-
-user@Machine:~/Downloads/devops-notes/Git$ git log --oneline
-f957a3e (HEAD -> main) Added F commit
-cb0c4d3 Added C commit
-965bf1b Added A commit
-ca607fd (origin/main, origin/HEAD) Update git-commands.md for Day 24
-0413e9d Updated the create page to fix an urgent bug
-7c852ba (origin/feature-settings, feature-settings) Add theme preference support
-e612858 Add settings validation
-54fd03d Add settings save functionality
-18241a6 Add settings page UI
-63caa00 Added profile  feature
-f6c27a0 Add basic logging utility
-a1d8f3f Add application configuration file
-74de71f Resolve merge conflict
-44fa941 Update greeting in main branch
-0b5cb9f (origin/feature-conflict, feature-conflict) Update greeting in feature branch
-6958dae Add greet function
-0c9143e Merge branch 'feature-signup'
-2492ba9 Add application entry point
-6e7aa5d Add utility function for user greeting
-d2f8c09 Add signup form validation
-2cf5e4f Add signup page UI
-2ca4e61 Merge branch 'feature-login'
-a3a4106 (origin/feature-login, feature-login) Add login form validation
-ce3ee08 Add login page UI
-62f84ef (origin/feature-1, feature-1) Fix typo in comment for clarity
-afc18ed Updated git-commands.md with Day 23 commands and descriptions
-67cfdcb Updated git-commands.md with Day 23 commands
-581e274 Added test.py for Testing purpose
-4b2bab6 Added more Git commands to git-commands.md and updated the cheat sheet.
-1ef76a7 - Updated  with additional Git commands and details.
-0f0a98c - Updated  with additional Git commands.
-aa82211 Added git-commands.md
+user@Machine:~/Downloads/devops-notes/Git$ git log --oneline | head
+4a2b0e9 test commit A
+557cf28 updated git-commands
 
 user@Machine:~/Downloads/devops-notes/Git$ git reset --hard HEAD~1
-HEAD is now at cb0c4d3 Added C commit
+HEAD is now at 557cf28 updated git-commands
+
 user@Machine:~/Downloads/devops-notes/Git$ git status
 On branch main
-nothing to commit, working tree clean 
+Your branch is up to date with 'origin/main'.
+nothing to commit, working tree clean
+
+user@Machine:~/Downloads/devops-notes/Git$ git log --oneline | head
+557cf28 updated git-commands
 ```
+After hard reset:
 
-## Answer in your notes
+![alt text](after-hard-reset.png)
 
-### What is the difference between --soft, --mixed, and --hard?
+**Observation**:
 
---soft keeps changes staged, --mixed keeps changes only in the working directory (unstaged), and --hard removes the changes completely.
+* Commit is removed.
+* Staged and unstaged changes are deleted.
+* Working directory matches previous commit.
 
-### Which one is destructive and why?
+### Difference Between Reset Types
 
-git reset --hard is destructive because it permanently deletes changes from both the staging area and the working directory, making them difficult or impossible to recover.
+| Command | Changes left in Commit-zone? | Changes left in Staged-zone? | Changes left in Workspace? |
+| ------- | -------------- | -------------- | ------------ |
+| --soft  | No            | Yes            | Yes          |
+| --mixed | No            | No             | Yes          |
+| --hard  | No            | No             | No           |
 
-### When would you use each one?
+### Which One Is Destructive? - `git reset --hard`
+* Reason: Permanently removes uncommitted changes from working directory.
 
-Use --soft when you want to undo a commit but keep the changes staged, --mixed when you want to undo a commit and keep the changes in the working directory (unstaged), and --hard when you want to discard the commit and all its changes completely.
+### When To Use?
 
-### Should you ever use git reset on commits that are already pushed?
+* Soft → Modify last commit message or combine commits.
+* Mixed → Unstage changes.
+* Hard → Discard local work completely.
 
-Avoid using git reset on commits that have already been pushed because it rewrites commit history and can cause problems for other people who have pulled those commits.
+### Should Reset Be Used On Pushed Commits? - No.
+
+* Reason: Rewrites Git history and can cause problems for collaborators.
 
 ## Task 2: Git Revert — Hands-On
 
