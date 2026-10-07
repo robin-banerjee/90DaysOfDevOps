@@ -66,7 +66,7 @@ https://github.com/robin-banerjee/
 
 ## 📸 After Changes
 
-![alt text](images/gh-update.png)
+![alt text](images/gh-updated.png)
 ![alt text](images/gh-profile-update.png)
 ![alt text](images/gh-links-updated.png)
 
