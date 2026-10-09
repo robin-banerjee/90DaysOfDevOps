@@ -33,18 +33,18 @@ Go through the checklist below and mark yourself honestly.
 
 ### Git & GitHub
 
--  Initialize a Git repository, stage changes, commit, and view commit history
--  Create, switch, and manage branches
--  Push to and pull from GitHub
--  Explain the difference between `git clone` and `git fork`
--  Merge branches and understand fast-forward vs. merge commits
--  Rebase a branch and explain when to use rebase vs. merge
--  Use `git stash` and `git stash pop`
--  Cherry-pick commits from another branch
--  Explain squash merge vs. regular merge
--  Use `git reset` (`--soft`, `--mixed`, `--hard`) and `git revert`
--  Explain GitFlow, GitHub Flow, and Trunk-Based Development
--  Use GitHub CLI (`gh`) to create repositories, pull requests, and issues
+- ✅ Initialize a Git repository, stage changes, commit, and view commit history
+- ✅ Create, switch, and manage branches
+- ✅ Push to and pull from GitHub
+- ✅ Explain the difference between `git clone` and `git fork`
+- ✅ Merge branches and understand fast-forward vs. merge commits
+- ✅ Rebase a branch and explain when to use rebase vs. merge
+- ✅ Use `git stash` and `git stash pop`
+- ✅ Cherry-pick commits from another branch
+- ✅ Explain squash merge vs. regular merge
+- ✅ Use `git reset` (`--soft`, `--mixed`, `--hard`) and `git revert`
+- ✅ Explain GitFlow, GitHub Flow, and Trunk-Based Development
+- ✅ Use GitHub CLI (`gh`) to create repositories, pull requests, and issues
 
 ## Task 2: Revisit Your Weak Spots
 
